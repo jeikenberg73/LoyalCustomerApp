@@ -12,8 +12,5 @@ Each log file will be a days worth of logs for the web site.
 
 How to use the application:
 
-1. 	Compile the application into an executable.
-2.	As a command console parameter provide a path to the folder holding the log files.
-3. 	Use ```getLoyalCustomersList(String[] args)``` to create a list of loyal customers.
-4.  Use ```generateReport(List<Integer> loyalCustomerIds, String fileName, String path)``` to create a  report with the list of loyal customers.
-5.  The application will then provide a text file with a list of the customers IDs associated to the customers that were loyal. The location of the file will be in the location and name provided to the generateReport method of the used to create the report.
+1. 	Use ```getLoyalCustomersList(String[] args)``` to create a list of loyal customers. Pass into the first position of the args array the path that the log folder containing the log files is located. The list is a ```List<Integer>```.
+2.  Use ```generateReport(List<Integer> loyalCustomerIds, String fileName, String path)``` to create a  report with the list of loyal customers. Pass in the loyal customer list, a name for the report, and the path. The application will create a folder with the name and path provided and produce the report in that folder.
